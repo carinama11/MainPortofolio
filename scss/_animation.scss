@@ -1,0 +1,81 @@
+// Header Enter Animation
+
+.about-me-firstload {
+    animation: about-me-enter-animation 3s ease-in-out;
+}
+
+.about-me-enter {
+    animation: about-me-enter-animation 1.5s;
+}
+
+.about-me-out {
+    animation: about-me-out-animation 1s;
+}
+
+.about-me-btn-in {
+    animation: about-me-btn-in-animation 1s;
+}
+
+.about-me-btn-out {
+    animation: about-me-btn-out-animation 1s;
+}
+
+@keyframes about-me-enter-animation {
+    0% {
+        margin-top: 20rem;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: -2rem;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+        display: flex;
+    }
+}
+
+@keyframes about-me-out-animation {
+    0% {
+        margin-top: 0rem;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        margin-top: 20rem;
+        display: none;
+    }
+}
+
+@keyframes about-me-btn-in-animation {
+    0% {
+        opacity: 0;
+        bottom: -5%;
+        z-index: -10;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 5%;
+        z-index: 10;
+    }
+}
+
+@keyframes about-me-btn-out-animation {
+    0% {
+        opacity: 1;
+        bottom: 5%;
+        z-index: 10;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: -5%;
+        z-index: -10;
+    }
+}
+
+// Header Enter Animation

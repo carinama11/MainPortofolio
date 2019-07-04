@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css?family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap");
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../pict/benjamin-davies-mqN-EV9rNlY-unsplash.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../pict/benjamin-davies-mqN-EV9rNlY-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.body-container {
+  width: 100%;
+}
+
+.burger-menu {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  position: fixed;
+  background-size: contain;
+  right: 4.3rem;
+  top: 2rem;
+  z-index: 10;
+}
+
+.burger-menu .navbar-icon {
+  width: 5rem;
+  height: 5rem;
+  fill: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.burger-menu .navbar-icon:hover {
+  fill: grey;
+}
+
+.burger-menu:hover .fixed-menu-dropdown {
+  right: 0;
+  right: -.2rem;
+  z-index: 10;
+}
+
+.burger-menu .fixed-menu-dropdown {
+  position: absolute;
+  right: 10000rem;
+  list-style-type: none;
+  color: white;
+  top: 5rem;
+}
+
+.burger-menu .fixed-menu-dropdown li .icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.burger-menu .fixed-menu-dropdown li:first-child {
+  margin-top: 1rem;
+}
+
+.burger-menu .fixed-menu-dropdown li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.burger-menu .github {
+  fill: white;
+}
+
+.burger-menu .github:hover {
+  cursor: pointer;
+  fill: grey;
+}
+
+.burger-menu .WhatsApp {
+  fill: red;
+}
+
+.burger-menu .WhatsApp:hover {
+  cursor: pointer;
+  fill: rgba(255, 0, 0, 0.705);
+}
+
+.burger-menu .Something {
+  fill: white;
+}
+
+.burger-menu .Something:hover {
+  cursor: pointer;
+  fill: magenta;
+}
+
+.myskill-container {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: black;
+  position: relative;
+}
+
+.myskill-container .main-skill-container,
+.myskill-container .sub-skill-container {
+  width: 40%;
+  text-align: center;
+  background: white;
+  margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 4rem;
+}
+
+.myskill-container .main-skill-container h1,
+.myskill-container .sub-skill-container h1 {
+  text-align: left;
+  margin-top: 2rem;
+  font-size: .8em;
+  margin-left: 2rem;
+}
+
+.myskill-container .main-skill-container hr,
+.myskill-container .sub-skill-container hr {
+  width: 75%;
+  margin-left: 6%;
+  margin-top: 2rem;
+  border: 1px solid grey;
+}
+
+.myskill-container .main-skill-container li,
+.myskill-container .sub-skill-container li {
+  font-size: .5em;
+  margin: 4rem 0;
+  margin-left: 4rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.myskill-container .main-skill-container li .ketupat,
+.myskill-container .sub-skill-container li .ketupat {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 3rem;
+  border: 2px solid rgba(71, 70, 70, 0.329);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 14%;
+}
+
+.myskill-container .main-skill-container li img,
+.myskill-container .sub-skill-container li img {
+  width: 5rem;
+  height: 5rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.myskill-container .main-skill-container li .css3,
+.myskill-container .main-skill-container li .js,
+.myskill-container .sub-skill-container li .css3,
+.myskill-container .sub-skill-container li .js {
+  width: 4rem;
+}
+
+.myskill-container .main-skill-container li .csharp,
+.myskill-container .main-skill-container li .php,
+.myskill-container .sub-skill-container li .csharp,
+.myskill-container .sub-skill-container li .php {
+  width: 70%;
+  height: 78%;
+}
+
+.myskill-container .main-skill-container li .c,
+.myskill-container .sub-skill-container li .c {
+  width: 80%;
+  height: 88%;
+}
+
+.myskill-container .main-skill-container li .NodeJs,
+.myskill-container .sub-skill-container li .NodeJs {
+  width: 90%;
+  height: 98%;
+}
+
+.myskill-container .main-skill-container li .mysql,
+.myskill-container .sub-skill-container li .mysql {
+  width: 80%;
+  height: 88%;
+  margin-top: -1.4rem;
+  margin-left: -1.4rem;
+}
+
+.myskill-container .sub-skill-container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ()[4fr];
+      grid-template-rows: repeat(4fr);
+  -ms-grid-columns: 22rem 22rem;
+      grid-template-columns: 22rem 22rem;
+}
+
+.myskill-container .vertical-line {
+  margin: 5% 0;
+  margin-right: 2rem;
+  width: 1px;
+  height: 60rem;
+  border-left: 1px solid grey;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header-container {
+  width: 100%;
+  height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+}
+
+.header-container .myskill-btn-sqr {
+  font-family: 'Viga', sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: none;
+  border: 4px solid white;
+  width: 30rem;
+  height: 10rem;
+  bottom: 5%;
+  z-index: -10;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.header-container .myskill-btn-sqr:hover {
+  cursor: pointer;
+  border: 3px solid #51b2f3;
+  color: #51b2f3;
+  width: 35rem;
+  height: 12rem;
+}
+
+.about-me {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Viga', sans-serif;
+}
+
+.about-me__header1 {
+  margin-top: 10%;
+  font-size: 10rem;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.about-me__header3 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 3.2rem;
+}
+
+.about-me__header3 a {
+  text-decoration: none;
+  color: #003cff;
+  font-weight: 500;
+}
+
+.about-me:hover {
+  cursor: context-menu;
+}
+
+.about-me .myskill-btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin: 4rem 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: none;
+  border: 3px solid white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: white;
+}
+
+.about-me .myskill-btn:hover {
+  cursor: pointer;
+  border: 3px solid #51b2f3;
+  color: #51b2f3;
+}
+
+.about-me-firstload {
+  -webkit-animation: about-me-enter-animation 3s ease-in-out;
+          animation: about-me-enter-animation 3s ease-in-out;
+}
+
+.about-me-enter {
+  -webkit-animation: about-me-enter-animation 1.5s;
+          animation: about-me-enter-animation 1.5s;
+}
+
+.about-me-out {
+  -webkit-animation: about-me-out-animation 1s;
+          animation: about-me-out-animation 1s;
+}
+
+.about-me-btn-in {
+  -webkit-animation: about-me-btn-in-animation 1s;
+          animation: about-me-btn-in-animation 1s;
+}
+
+.about-me-btn-out {
+  -webkit-animation: about-me-btn-out-animation 1s;
+          animation: about-me-btn-out-animation 1s;
+}
+
+@-webkit-keyframes about-me-enter-animation {
+  0% {
+    margin-top: 20rem;
+    opacity: 0;
+  }
+  50% {
+    margin-top: -2rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+@keyframes about-me-enter-animation {
+  0% {
+    margin-top: 20rem;
+    opacity: 0;
+  }
+  50% {
+    margin-top: -2rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@-webkit-keyframes about-me-out-animation {
+  0% {
+    margin-top: 0rem;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    margin-top: 20rem;
+    display: none;
+  }
+}
+
+@keyframes about-me-out-animation {
+  0% {
+    margin-top: 0rem;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    margin-top: 20rem;
+    display: none;
+  }
+}
+
+@-webkit-keyframes about-me-btn-in-animation {
+  0% {
+    opacity: 0;
+    bottom: -5%;
+    z-index: -10;
+  }
+  100% {
+    opacity: 1;
+    bottom: 5%;
+    z-index: 10;
+  }
+}
+
+@keyframes about-me-btn-in-animation {
+  0% {
+    opacity: 0;
+    bottom: -5%;
+    z-index: -10;
+  }
+  100% {
+    opacity: 1;
+    bottom: 5%;
+    z-index: 10;
+  }
+}
+
+@-webkit-keyframes about-me-btn-out-animation {
+  0% {
+    opacity: 1;
+    bottom: 5%;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+    bottom: -5%;
+    z-index: -10;
+  }
+}
+
+@keyframes about-me-btn-out-animation {
+  0% {
+    opacity: 1;
+    bottom: 5%;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+    bottom: -5%;
+    z-index: -10;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/*# sourceMappingURL=style.css.map */

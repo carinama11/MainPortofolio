@@ -1,0 +1,201 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../pict/benjamin-davies-mqN-EV9rNlY-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-container {
+    width: 100%;
+}
+
+.burger-menu {
+    transform: translateX(50%);
+    position: fixed;
+    // background: url('../pict/list.png') no-repeat;
+    background-size: contain;
+    right: 4.3rem;
+    top: 2rem;
+    z-index: 10;
+
+    .navbar-icon {
+        width: 5rem;
+        height: 5rem;
+        fill: white;
+        transition: all .4s;
+
+        &:hover {
+            fill: grey;
+        }
+    }
+
+    &:hover {
+        .fixed-menu-dropdown {
+            right: 0;
+            right: -.2rem;
+            z-index: 10;
+        }
+    }
+
+    .fixed-menu-dropdown {
+        position: absolute;
+        right: 10000rem;
+        list-style-type: none;
+        color: white;
+        top: 5rem;
+
+        li {
+            .icon {
+                width: 5rem;
+                height: 5rem;
+            }
+
+            &:first-child {
+                margin-top: 1rem;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .github {
+        fill: white;
+
+        &:hover {
+            cursor: pointer;
+            fill: grey;
+        }
+    }
+
+    .WhatsApp {
+        fill: red;
+
+        &:hover {
+            cursor: pointer;
+            fill: rgba(255, 0, 0, 0.705);
+        }
+    }
+
+    .Something {
+        fill: white;
+
+        &:hover {
+            cursor: pointer;
+            fill: rgb(255, 0, 255);
+        }
+    }
+}
+
+.myskill-container {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    position: relative;
+
+    .main-skill-container,
+    .sub-skill-container {
+        width: 40%;
+        text-align: center;
+        background: white;
+        margin: 5% 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 4rem;
+
+        h1 {
+            text-align: left;
+            margin-top: 2rem;
+            font-size: .8em;
+            margin-left: 2rem;
+        }
+
+        hr {
+            width: 75%;
+            margin-left: 6%;
+            margin-top: 2rem;
+            border: 1px solid grey;
+        }
+
+
+        li {
+            font-size: .5em;
+            margin: 4rem 0;
+            margin-left: 4rem;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+
+            .ketupat {
+                width: 8rem;
+                height: 8rem;
+                margin-right: 3rem;
+                border: 2px solid rgba(71, 70, 70, 0.329);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: rotate(45deg);
+                border-radius: 14%;
+            }
+
+            img {
+                width: 5rem;
+                height: 5rem;
+                transform: rotate(-45deg);
+            }
+
+            .css3,
+            .js {
+                width: 4rem;
+            }
+
+            .csharp,
+            .php {
+                width: 70%;
+                height: 78%;
+            }
+
+            .c {
+                width: 80%;
+                height: 88%;
+            }
+
+            .NodeJs {
+                width: 90%;
+                height: 98%;
+            }
+
+            .mysql {
+                width: 80%;
+                height: 88%;
+                margin-top: -1.4rem;
+                margin-left: -1.4rem;
+            }
+        }
+
+    }
+
+    .sub-skill-container {
+        ul {
+            display: grid;
+            grid-template-rows: repeat(4 * 1fr);
+            grid-template-columns: 22rem 22rem;
+        }
+    }
+
+    .vertical-line {
+        margin: 5% 0;
+        margin-right: 2rem;
+        width: 1px;
+        height: 60rem;
+        border-left: 1px solid grey;
+    }
+}
+
+li {
+    list-style-type: none;
+}
